@@ -16,6 +16,12 @@
       "email": "damien.harper@gmail.com"
     }
   ],
+  "repositories": [
+      {
+          "type": "vcs",
+          "url": "https://github.com/OTRD/auditor.git"
+      }
+  ],
   "require": {
     "php": ">=8.1",
     "ext-json": "*",
