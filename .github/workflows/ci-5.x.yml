@@ -18,7 +18,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: 5.x
 
@@ -50,6 +50,8 @@ jobs:
           - '7.4'
           - '8.0'
           - '8.1'
+          - '8.2'
+          - '8.3'
         symfony:
           - '4.4.*'
           - '5.*'
@@ -57,7 +59,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: 5.x
 
@@ -79,7 +81,7 @@ jobs:
         run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Cache dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
           key: ${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
@@ -124,13 +126,15 @@ jobs:
         php:
           - '8.0'
           - '8.1'
+          - '8.2'
+          - '8.3'
         symfony:
           - '6.*'
       fail-fast: false
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: 5.x
 
@@ -152,7 +156,7 @@ jobs:
         run: echo "dir=$(composer config cache-files-dir)" >> $GITHUB_OUTPUT
 
       - name: Cache dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.dir }}
           key: ${{ matrix.php }}-composer-${{ hashFiles('**/composer.json') }}
