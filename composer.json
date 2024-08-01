@@ -10,13 +10,19 @@
             "email": "damien.harper@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/OTRD/auditor"
+        }
+    ],
     "require": {
         "php": ">=7.4",
         "ext-json": "*",
-        "damienharper/auditor": "^2.3",
         "doctrine/annotations": "^1.8|^2.0",
         "doctrine/doctrine-bundle": "^2.7",
         "doctrine/orm": "^2.7",
+        "otrd/auditor": "^2.4",
         "symfony/asset": "^4.0|^5.0|^6.0",
         "symfony/doctrine-bridge": "^4.4.19|^5.2.2|^6.0",
         "symfony/event-dispatcher": "^4.0|^5.0|^6.0",
