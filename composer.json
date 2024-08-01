@@ -19,16 +19,16 @@
   "repositories": [
       {
           "type": "vcs",
-          "url": "https://github.com/OTRD/auditor.git"
+          "url": "https://github.com/OTRD/auditor"
       }
   ],
   "require": {
     "php": ">=8.1",
     "ext-json": "*",
-    "otrd/auditor": "dev-master",
     "doctrine/annotations": "^1.8|^2.0",
     "doctrine/doctrine-bundle": "^2.0",
-    "doctrine/orm": "^2.13 || ^3.1" ,
+    "doctrine/orm": "^2.13 || ^3.1",
+    "otrd/auditor": "dev-master",
     "symfony/asset": "^5.4|^6.0|^7.0",
     "symfony/doctrine-bridge": "^5.4|^6.0|^7.0",
     "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
